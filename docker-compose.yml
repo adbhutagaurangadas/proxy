@@ -13,4 +13,5 @@ services:
     volumes:
       - /var/run/docker.sock:/tmp/docker.sock:ro
       - ./certs:/etc/nginx/certs
+      - ./extra.conf:/etc/nginx/conf.d/extra.conf
     container_name: proxy
